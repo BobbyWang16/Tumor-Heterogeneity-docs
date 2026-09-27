@@ -1,5 +1,7 @@
 # 开发与文档维护
 
+本网站从独立公开文档仓库 `BobbyWang16/Tumor-Heterogeneity-docs` 构建。该仓库只包含文档；下方算法测试命令需要访问私有实现仓库，并在其根目录运行。文档构建命令可以直接在公开文档仓库运行。
+
 ## 本地测试
 
 ```bash
@@ -16,7 +18,7 @@ python QuanTAV/smoke_test.py
 文档使用 Sphinx、MyST Markdown 和 Read the Docs 主题：
 
 ```bash
-python -m pip install -e ".[docs]"
+python -m pip install -r docs/requirements.txt
 python -m sphinx -W --keep-going -b html docs docs/_build/html
 ```
 
@@ -36,4 +38,4 @@ python -m sphinx -W --keep-going -b html docs docs/_build/html
 - 修改特征时同时说明数值定义、单位、输入假设和边界情况。
 - 不把未运行的检查、未上线的网站或未发布的软件写成已完成。
 
-已完成的重构范围保留在仓库根目录 `重构说明.md`；它属于维护记录，不是入门教程。
+已完成的重构范围保留在私有实现仓库根目录 `重构说明.md`；它属于维护记录，不是入门教程。

@@ -1,5 +1,7 @@
 # Development and documentation
 
+This site builds from the public documentation-only repository `BobbyWang16/Tumor-Heterogeneity-docs`. Algorithm test commands below require access to the private implementation repository and must run from its root. Documentation build commands work in the public documentation repository.
+
 ## Local checks
 
 ```bash
@@ -16,7 +18,7 @@ The full test suite includes QuanTAV and optional analysis dependencies, so inst
 Documentation uses Sphinx, MyST Markdown, and the Read the Docs theme:
 
 ```bash
-python -m pip install -e ".[docs]"
+python -m pip install -r docs/requirements.txt
 python -m sphinx -W --keep-going -b html docs docs/_build/html
 ```
 
@@ -36,4 +38,4 @@ This is one bilingual documentation project, not two Read the Docs translation p
 - Explain the definition, units, assumptions, and edge cases when changing a feature.
 - Do not describe unrun checks, unpublished packages, or unavailable capabilities as completed.
 
-The repository-root `重构说明.md` is a maintenance record rather than a tutorial.
+The private implementation repository’s root file `重构说明.md` is a maintenance record rather than a tutorial.
