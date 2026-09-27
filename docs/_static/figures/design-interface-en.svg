@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="936pt" height="244.8pt" viewBox="0 0 936 244.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T22:26:15.848207</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 244.8 
+L 936 244.8 
+L 936 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 135.135 173.009952 
+L 343.083 173.009952 
+Q 351.7878 173.009952 351.7878 170.748 
+L 351.7878 76.5 
+Q 351.7878 74.238048 343.083 74.238048 
+L 135.135 74.238048 
+Q 126.4302 74.238048 126.4302 76.5 
+L 126.4302 170.748 
+Q 126.4302 173.009952 135.135 173.009952 
+z
+" clip-path="url(#p7f9ead8517)" style="fill: #eef6f6; stroke: #a7c6c7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 369.681 173.009952 
+L 577.629 173.009952 
+Q 586.3338 173.009952 586.3338 170.748 
+L 586.3338 76.5 
+Q 586.3338 74.238048 577.629 74.238048 
+L 369.681 74.238048 
+Q 360.9762 74.238048 360.9762 76.5 
+L 360.9762 170.748 
+Q 360.9762 173.009952 369.681 173.009952 
+z
+" clip-path="url(#p7f9ead8517)" style="fill: #eef6f6; stroke: #a7c6c7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 604.227 173.009952 
+L 812.175 173.009952 
+Q 820.8798 173.009952 820.8798 170.748 
+L 820.8798 76.5 
+Q 820.8798 74.238048 812.175 74.238048 
+L 604.227 74.238048 
+Q 595.5222 74.238048 595.5222 76.5 
+L 595.5222 170.748 
+Q 595.5222 173.009952 604.227 173.009952 
+z
+" clip-path="url(#p7f9ead8517)" style="fill: #eef6f6; stroke: #a7c6c7; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #137f88" x="239.109" y="104.641199" transform="rotate(-0 239.109 104.641199)">Input</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="239.109" y="140.12997" transform="rotate(-0 239.109 140.12997)">image + mask</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 355.965226 123.624 
+Q 368.47176 123.624 378.742227 123.624 
+" style="fill: none; stroke: #137f88; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 373.942227 121.224 
+L 378.742227 123.624 
+L 373.942227 126.024 
+" style="fill: none; stroke: #137f88; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #137f88" x="473.655" y="104.641746" transform="rotate(-0 473.655 104.641746)">Model</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="473.655" y="140.12997" transform="rotate(-0 473.655 140.12997)">compute(image, mask)</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 590.511226 123.624 
+Q 603.01776 123.624 613.288227 123.624 
+" style="fill: none; stroke: #137f88; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 608.488227 121.224 
+L 613.288227 123.624 
+L 608.488227 126.024 
+" style="fill: none; stroke: #137f88; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #137f88" x="708.201" y="104.641199" transform="rotate(-0 708.201 104.641199)">Output</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(658.44975 131.69247)">score + features</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(665.521312 149.72997)">optional maps</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #163b4c" x="468" y="29.125031" transform="rotate(-0 468 29.125031)">Shared input, distinct outputs</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52636a" x="23.4" y="237.456" transform="rotate(-0 23.4 237.456)">TEACHING SCHEMATIC · SYNTHETIC ARRAYS / HAND-DRAWN STRUCTURES · NOT MODEL OUTPUT</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7f9ead8517">
+   <rect x="117" y="29.376" width="725.4" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

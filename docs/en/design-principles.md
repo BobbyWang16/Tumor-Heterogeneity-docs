@@ -1,8 +1,13 @@
 # Why is it designed this way?
 
+**Reading the diagrams:** All diagrams and partitions below are teaching schematics using synthetic arrays or hand-drawn structures, not actual model outputs. Read each as input → processing → description; the text gives the implementation details.
+
 Our central idea is to **describe the same tumor from several interpretable perspectives, with inputs and outputs that can be inspected at each step**.
 
 ## 1. Seven models ask different questions
+
+![1. Seven models ask different questions — conceptual diagram](../_static/figures/spatial-en.png)
+
 
 | Question | Perspective | Model |
 | --- | --- | --- |
@@ -18,6 +23,9 @@ These perspectives complement each other but are not guaranteed to be statistica
 
 ## 2. Share an interface without hiding differences
 
+![2. Share an interface without hiding differences — conceptual diagram](../_static/figures/design-interface-en.png)
+
+
 Models share `compute(image, mask)` and the basic `score` and `features` result fields. Switching a model does not require rewriting the input code.
 
 Spatial maps remain optional. An intensity summary does not naturally define a partition map, so we do not force every model to produce one. Batch processing retains table fields rather than storing an entire cohort's 3D arrays in memory.
@@ -25,6 +33,9 @@ Spatial maps remain optional. An intensity summary does not naturally define a p
 This consistency currently exists at the model layer. A higher-level extractor with geometry checks and unified configuration is still part of the [release design](package-design.md).
 
 ## 3. Make inputs comparable before comparing scores
+
+![3. Make inputs comparable before comparing scores — conceptual diagram](../_static/figures/design-spacing-en.png)
+
 
 A five-voxel ring has a different physical width in 1 mm and 3 mm images. Several current models assume unit spacing, so whole-model experiments should first prepare 1 mm isotropic images.
 
@@ -34,6 +45,9 @@ That does not remove the need to choose preprocessing for the study. Record acqu
 
 ### DHI: start with relative variation
 
+![DHI: start with relative variation — conceptual diagram](../_static/figures/design-dhi-en.png)
+
+
 The main score is approximately:
 
 `CV = standard deviation / mean`
@@ -42,25 +56,43 @@ The implementation retains intensities within configured percentiles, uses the s
 
 ### BIH: change the observation scale
 
+![BIH: change the observation scale — conceptual diagram](../_static/figures/design-bih-en.png)
+
+
 The implementation selects the largest axial tumor slice and normalizes ROI intensities. At each box scale, it summarizes the average signal of foreground-containing boxes. A log–log fit supplies the negative slope reported as `fd`. This is the implementation's signal-scale descriptor, not a claim of equivalence to every classical binary box-counting method. Inspect `r2` and residuals to assess the fit.
 
 ### HAB: consider both composition and arrangement
+
+![HAB: consider both composition and arrangement — conceptual diagram](../_static/figures/design-hab-en.png)
+
 
 GMM and spatial priors produce image habitats. The score combines composition entropy, radial layering, core–shell differences, boundary and global mixing, and fragmentation. `H_HAB` uses fixed hand-selected weights and is clipped to `[0, 1]`; these are not clinical risk coefficients learned from the current cohort.
 
 ### THI: do similar textures form coherent regions?
 
+![THI: do similar textures form coherent regions? — conceptual diagram](../_static/figures/design-thi-en.png)
+
+
 THI extracts local features and applies KMeans. For each cluster, it computes the fraction occupied by its largest connected component. The score is one minus the average fraction across clusters. Fragmenting a cluster usually reduces that largest-component fraction.
 
 ### PTH: examine the surrounding tissue
+
+![PTH: examine the surrounding tissue — conceptual diagram](../_static/figures/design-pth-en.png)
+
 
 A peritumoral ring is partitioned using SLIC, and block-level features are compared. The main score averages `PTH_CV_*` features. Input images must retain surrounding tissue; insufficient rings can produce empty features and fallback scores.
 
 ### SHI: describe the boundary and shape
 
+![SHI: describe the boundary and shape — conceptual diagram](../_static/figures/design-shi-en.png)
+
+
 Outputs include volume, surface area, sphericity, convex-hull measurements, and fractal descriptors. The current main score averages available values of `1-sphericity`, `1-solidity`, and `FD_surface/3`. It is a hand-composed shape summary, not a calibrated biological heterogeneity scale.
 
 ### ITH-FS: combine feature similarity with spatial proximity
+
+![ITH-FS: combine feature similarity with spatial proximity — conceptual diagram](../_static/figures/design-ith-fs-en.png)
+
 
 Multi-scale voxel features define a nearest-neighbor graph. Edge weights account for both feature and spatial distances. Spectral clustering produces regions, and connected-region structure and spatial coherence contribute to the score. “Fusion” refers to features and spatial relationships, not averaging the other six scores.
 
@@ -68,6 +100,13 @@ The `confidence_map` reflects relative distances from voxels to their cluster ce
 
 ## 5. Interpretation still requires inspection
 
+![5. Interpretation still requires inspection — conceptual diagram](../_static/figures/design-inspection-en.png)
+
+
 Different structures can produce similar scores. Check inputs and errors first, then inspect features, fit quality, and regional maps before interpreting cohort differences. We retain these intermediate descriptions so the result can be traced beyond a single number.
 
 Complete experiment configuration still needs to be saved explicitly. Automatic provenance, a unified high-level API, and configuration cleanup remain planned. See [Configuration](configuration.md) and [Models and outputs](models.md).
+
+## Download and reproduce
+
+Download the [design plotting script](../_static/figures/generate_design.py), install `numpy`, `scipy`, and `matplotlib`, and run it to export bilingual PNG and SVG files. Chinese rendering needs Microsoft YaHei or another Chinese font selected in the script. The spatial comparison script is provided in the [visual guide](visual-guide.md).

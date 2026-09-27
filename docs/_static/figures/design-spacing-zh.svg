@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="936pt" height="288pt" viewBox="0 0 936 288" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T22:26:13.304127</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 288 
+L 936 288 
+L 936 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 157.3 113.28 
+L 197.6 113.28 
+L 197.6 82.656 
+L 157.3 82.656 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 197.6 113.28 
+L 237.9 113.28 
+L 237.9 82.656 
+L 197.6 82.656 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 237.9 113.28 
+L 278.2 113.28 
+L 278.2 82.656 
+L 237.9 82.656 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 278.2 113.28 
+L 318.5 113.28 
+L 318.5 82.656 
+L 278.2 82.656 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 318.5 113.28 
+L 358.8 113.28 
+L 358.8 82.656 
+L 318.5 82.656 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 157.3 196.8 
+L 278.2 196.8 
+L 278.2 166.176 
+L 157.3 166.176 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 278.2 196.8 
+L 399.1 196.8 
+L 399.1 166.176 
+L 278.2 166.176 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 399.1 196.8 
+L 520 196.8 
+L 520 166.176 
+L 399.1 166.176 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 520 196.8 
+L 640.9 196.8 
+L 640.9 166.176 
+L 520 166.176 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 640.9 196.8 
+L 761.8 196.8 
+L 761.8 166.176 
+L 640.9 166.176 
+z
+" clip-path="url(#paa658f1fbe)" style="fill: #a7cdcf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #137f88" x="157.3" y="71.52" transform="rotate(-0 157.3 71.52)">5 × 1 mm = 5 mm</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #137f88" x="157.3" y="155.04" transform="rotate(-0 157.3 155.04)">5 × 3 mm = 15 mm</text>
+   </g>
+  </g>
+  <g id="text_3">
+   <text style="font-weight: 700; font-size: 19px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #163b4c" x="468" y="21.690313" transform="rotate(-0 468 21.690313)">5 个体素，不一定是同样的距离</text>
+  </g>
+  <g id="text_4">
+   <text style="font-size: 9px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #52636a" x="23.4" y="279.36" transform="rotate(-0 23.4 279.36)">教学示意 · 模拟数组 / 手绘结构 · 不是算法运行结果</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="paa658f1fbe">
+   <rect x="117" y="57.6" width="725.4" height="167.04"/>
+  </clipPath>
+ </defs>
+</svg>
