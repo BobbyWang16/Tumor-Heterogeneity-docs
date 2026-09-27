@@ -41,6 +41,7 @@ def page_language(app, pagename, templatename, context, doctree):
                 ("index", "欢迎使用", "Welcome"),
                 ("installation", "安装", "Installation"),
                 ("concepts", "基本概念", "Basic concepts"),
+                ("visual-guide", "可视化图解", "Visual guide"),
                 ("getting-started", "快速入门", "Getting Started"),
                 ("design-principles", "设计原理", "Design principles"),
                 ("data-and-batch", "数据与批处理", "Data and batch processing"),

@@ -28,6 +28,12 @@ Tumor Heterogeneity 是面向 CT 肿瘤异质性研究的 Python 工具集。主
 
 当前发行配置名为 `tumor-heterogeneity`，Python 导入路径暂为 `src`；源码安装方式已提供。本文档不假设包已发布到 PyPI。DualCT、R 脚本及第三方 ITHscore 的边界见 [包发布设计](package-design.md)。
 
+## 用图理解异质性
+
+![模拟影像、肿瘤掩膜、示意性分区与瘤周环带](_static/figures/workflow-zh.png)
+
+**教学模拟，非患者影像或模型预测。** 从灰度分布到空间排列，阅读 [异质性可视化图解](visual-guide.md)，理解每一类图能回答什么问题。
+
 ## 从输入到结果
 
 ```{raw} html
@@ -51,6 +57,7 @@ Tumor Heterogeneity 是面向 CT 肿瘤异质性研究的 Python 工具集。主
 
 installation
 concepts
+visual-guide
 getting-started
 design-principles
 data-and-batch

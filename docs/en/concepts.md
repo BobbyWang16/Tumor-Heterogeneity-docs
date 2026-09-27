@@ -43,3 +43,10 @@ Think of these as a summary, an itemized description, a map, and calculation not
 ## A reproducible starting point
 
 Run DHI on synthetic data first. Then inspect a few real cases and their spatial alignment. Finally, fix the parameters and process the cohort. Continue to [Getting Started](getting-started.md).
+
+
+## See the difference
+
+![Equal means with different intensity distributions](../_static/figures/intensity-en.png)
+
+Synthetic data with a shared color scale show why the mean cannot describe all intensity variation. See the [visual guide](visual-guide.md) for explanations and spatial comparisons.

@@ -14,6 +14,12 @@ Tumor Heterogeneity is a Python toolkit for studying tumor heterogeneity in CT i
 - **Interpret the results:** [Models and outputs](models.md) → [Configuration](configuration.md).
 - **Integrate or contribute:** [API Reference](api.md) → [Package design](package-design.md).
 
+## See heterogeneity
+
+![Synthetic image, tumor mask, illustrative partitions and surrounding ring](../_static/figures/workflow-en.png)
+
+**Educational simulation, not patient imaging or model predictions.** Explore the [visual guide](visual-guide.md) to understand intensity distributions and spatial arrangement.
+
 ## From input to result
 
 ```{raw} html
@@ -47,6 +53,7 @@ Every page links to its Chinese counterpart. [简体中文文档](../index.md).
 
 installation
 concepts
+visual-guide
 getting-started
 design-principles
 data-and-batch

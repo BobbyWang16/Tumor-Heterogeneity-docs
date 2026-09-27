@@ -1,0 +1,5 @@
+synthetic_case,roi_pixels,mean,population_sd
+narrow,5127,60.0,4.000000000000001
+wide,5127,60.0,22.000000000000004
+clustered,5127,60.0,22.0
+mixed,5127,60.0,22.000000000000004
