@@ -1,0 +1,9 @@
+{% if 'singlehtml' not in builder %}
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
+    <input type="text" name="q" placeholder="{{ 'Search both languages' if language == 'en' else '搜索中英文文档' }}" aria-label="{{ 'Search documentation' if language == 'en' else '搜索文档' }}" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+{% endif %}

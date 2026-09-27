@@ -1,0 +1,16 @@
+{% extends "!layout.html" %}
+{% block document %}
+<nav class="language-bar" aria-label="Language / 语言">
+  <span>{{ language_current }}</span>
+  <a href="{{ pathto(language_target) }}" hreflang="{{ 'zh-CN' if language == 'en' else 'en' }}">{{ language_label }} ↗</a>
+</nav>
+{{ super() }}
+{% endblock %}
+{% block menu %}
+<p class="caption"><span class="caption-text">{{ 'User guide' if language == 'en' else '用户指南' }}</span></p>
+<ul>
+{% for item in localized_navigation %}
+  <li class="toctree-l1{% if pagename == item.path %} current{% endif %}"><a class="reference internal" href="{{ pathto(item.path) }}">{{ item.title }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+<footer>
+  <div class="rst-footer-buttons" role="navigation" aria-label="{{ 'Page navigation' if language == 'en' else '页面导航' }}">
+  {% for item in localized_navigation %}
+    {% if item.path == pagename %}
+      {% if not loop.first %}
+        <a class="btn btn-neutral float-left" href="{{ pathto(localized_navigation[loop.index0 - 1].path) }}">← {{ 'Previous' if language == 'en' else '上一页' }}</a>
+      {% endif %}
+      {% if not loop.last %}
+        <a class="btn btn-neutral float-right" href="{{ pathto(localized_navigation[loop.index0 + 1].path) }}">{{ 'Next' if language == 'en' else '下一页' }} →</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  <hr>
+  <p>© {{ copyright }}</p>
+  <p>{{ 'Built with' if language == 'en' else '构建工具：' }} <a href="https://www.sphinx-doc.org/">Sphinx</a> · <a href="https://github.com/readthedocs/sphinx_rtd_theme">Read the Docs theme</a></p>
+</footer>
